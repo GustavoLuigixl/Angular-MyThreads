@@ -1,0 +1,16 @@
+<header  >
+    <app-header />
+</header>
+
+<div >
+    <app-post />
+</div>
+
+<div *ngFor="let tm of treads">
+    <app-threads [treadmensagem] = tm />    
+</div>
+
+<div>
+    <app-footer />
+</div>
+

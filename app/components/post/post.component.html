@@ -1,0 +1,59 @@
+<div class="flex items-center justify-center container mx-auto">
+    <div class="w-[650px] bg-zinc-800 rounded-lg shadow p-6 mb-8">
+        <div class="flex justify-center w-full">
+            <!-- avatar -->
+            <div class="flex-shrink-0 mr-5">
+                <div class="cursor-pointer font-bold w-12 h-12 
+                    bg-gray-300 flex
+                    items-center
+                    justify-center 
+                    rounded-full">
+                    G
+                </div>
+            </div>
+            <!--form-->
+            <div class="flex-1 ">
+                <!-- Text -->
+                <textarea (keyup.enter)="entread()" [(ngModel)]="treadmessage" (input)="alttread()" [maxlength]="treadmessage" class="
+                 mb-2
+				 bg-gray-200
+				 focus:outline-none
+				 focus:shadow-outline
+				 focus:bg-gray-100
+				 border border-transparent
+				 rounded-lg
+				 py-2
+				 px-4
+				 block w-full
+				 appearance-none
+				 font-light
+				 resize-none
+				 placeholder-gray-700
+				 " rows="3" placeholder="Iniciar uma Thread..."></textarea>
+
+                <div class="w-auto border rounded-lg"></div>
+
+                <!-- butons -->
+                <div class="flex justify-end items-baseline ">
+
+                    <!-- count -->
+                    <div class="mr-5 font-thin text-gray-500">
+                        <p>{{treadrestante}}</p>
+                    </div>
+
+                    <!-- buton -->
+                    <div class="mt-5">
+                        <button type="button" class="w-32 focus:outline-none  border
+                        border-transparent py-2 px-5 rounded-lg bg-zinc-600 
+                        hover:bg-zinc-700 font-medium text-white shadow text-center" (click)="entread()">
+                            Publicar</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
